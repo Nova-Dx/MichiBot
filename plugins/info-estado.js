@@ -15,26 +15,26 @@ _muptime = await new Promise(resolve => { process.once('message', resolve)
 setTimeout(resolve, 1000) }) * 1000}
 let uptime = clockString(_uptime)
 let estado = `╭━━━━[ *𝙀𝙎𝙏𝘼𝘿𝙊* ]━━━━━⬣
-┃💗 *¡Hola* ${name}
+┃🤍 *¡Hola* ${name}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
 ┃𓃠 *Versión de ${gt}*
 ┃➥ ${vs}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✿ 𝗖𝗥𝗘𝗔𝗗𝗢𝗥𝗔
-┃ღ GeriPium
+┃☁ 𝗖𝗥𝗘𝗔𝗗𝗢𝗥
+┃✩ Nova
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃✿ 𝗖𝗢𝗡𝗧𝗔𝗖𝗧𝗢
+┃☁ 𝗖𝗢𝗡𝗧𝗔𝗖𝗧𝗢
 ┃➥ *${ig}*
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ღ ${global.opts['self'] ? '𝙋𝙍𝙄𝙑𝘼𝘿𝙊' : '𝙋𝙐𝘽𝙇𝙄𝘾𝙊'}
+┃✩ ${global.opts['self'] ? '𝙋𝙍𝙄𝙑𝘼𝘿𝙊' : '𝙋𝙐𝘽𝙇𝙄𝘾𝙊'}
 ┃┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈┈
-┃ღ *Activo Durante* 
+┃✩ *Activo Durante* 
 ┃➥ ${uptime}
-┃ღ *Usuario(s)* 
+┃✩ *Usuario(s)* 
 ┃➥ ${Object.keys(global.db.data.users).length} 
-┃ღ *Chat(s) Prohibido(s)*
+┃✩ *Chat(s) Prohibido(s)*
 ┃➥ ${Object.entries(global.db.data.chats).filter(chat => chat[1].isBanned).length} 
-┃ღ *Usuario(s) Prohibido(s)*
+┃✩ *Usuario(s) Prohibido(s)*
 ┃➥ ${Object.entries(global.db.data.users).filter(user => user[1].banned).length} 
 ╰━━━━━━━━━━━━━━━━━━⬣`
 await conn.reply(m.chat, estado, m, fakeChannel)
