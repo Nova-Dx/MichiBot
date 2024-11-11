@@ -16,16 +16,16 @@
     "eslint": "eslint .",
     "eslintfix": "eslint --fix ."
   },
-  "homepage": "https://github.com/Richetti123/MichiBot6",
+  "homepage": "https://github.com/Nova-Dx/MichiBot",
   "author": {
     "name": "BrunoSobrino"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Richetti123/MichiBot6.git"
+    "url": "git+https://github.com/Nova-Dx/MichiBot.git"
   },
   "bugs": {
-    "url": "https://github.com/Richetti123/MichiBot6/issues"
+    "url": "https://github.com/Nova-Dx/MichiBot/issues"
   },
   "license": "GPL-3.0-or-later",
   "dependencies": {
